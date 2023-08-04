@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bincypress run",
+    "chrometest": "npm run test -- --browser chrome",
+    "MYTM Travels": "npm run test -- --spec \"cypress/Integration/Examples/MYTM Travels/*\" "
   },
   "author": "",
   "license": "ISC",
